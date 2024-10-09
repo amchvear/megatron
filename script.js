@@ -1,8 +1,8 @@
 function toggleDetails() {
-    const moreInfo = document.getElementById("more-info");
-    if (moreInfo.classList.contains("hidden")) {
-        moreInfo.classList.remove("hidden");
+    const moreInfo = document.getElementById('more-info');
+    if (moreInfo.classList.contains('hidden')) {
+        moreInfo.classList.remove('hidden');
     } else {
-        moreInfo.classList.add("hidden");
+        moreInfo.classList.add('hidden');
     }
 }
