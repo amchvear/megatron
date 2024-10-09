@@ -4,20 +4,35 @@
     box-sizing: border-box;
 }
 
-font-family: 'Poppins', sans-serif;
-    background-color: #1d1f21;
-    color: #eee;
-    line-height: 1.6;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0A0F1F;
+    color: #F5F5F5;
+    scroll-behavior: smooth;
 }
 
-nav {
-    background-color: #131B33; /* Dark blue header */
-    padding: 15px;
+header {
+    background-color: #0A0F1F;
+    padding: 20px;
     text-align: center;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+}
+
+.group-name {
+    font-family: 'Orbitron', sans-serif;
+    color: #4EF1F2;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+nav {
+    background-color: #131B33;
+    padding: 10px;
+    text-align: center;
+    margin-top: 50px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -31,11 +46,10 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #4EF1F2; /* Neon blue */
+    color: #4EF1F2;
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
     font-size: 18px;
-    letter-spacing: 1px;
     transition: color 0.3s;
 }
 
@@ -43,11 +57,14 @@ nav ul li a:hover {
     color: #FFFFFF;
 }
 
-.section-title {
+.section {
+    padding: 100px 50px;
     text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 40px;
-    color: #00d2ff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #intro {
@@ -63,6 +80,7 @@ nav ul li a:hover {
     font-size: 4rem;
     font-family: 'Orbitron', sans-serif;
     color: #4EF1F2;
+    animation: slide-in 1s forwards; /* Entrance animation */
 }
 
 .hero-content p {
@@ -97,11 +115,14 @@ button:hover {
     flex-wrap: wrap;
 }
 
-.display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
+.component-card {
+    background-color: #1C233A;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 .component-card:hover {
     transform: translateY(-10px);
@@ -114,6 +135,10 @@ button:hover {
     margin-bottom: 10px;
 }
 
+.spacer {
+    height: 100px; /* Extra space between components and advantages */
+}
+
 footer {
     background-color: #131B33;
     padding: 20px;
@@ -122,4 +147,43 @@ footer {
 
 footer p {
     color: #4EF1F2;
+}
+
+/* Team Section Styling */
+#team .team-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#team .team-member {
+    background-color: #1C233A;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#team .team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+#team .team-member h3 {
+    font-size: 1.2rem;
+    color: #4EF1F2;
+}
+
+/* Animation */
+@keyframes slide-in {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
