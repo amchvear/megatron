@@ -3,24 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Light Detecting Robot</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Light Tracking Robot</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Light Detecting Robot</h1>
-    </header>
-    <main>
-        <section class="robot-info">
-            <h2>Robot Information</h2>
-            <p>The light detecting robot is a device that detects light intensity and displays the reading on a screen.</p>
-        </section>
-        <section class="light-detection">
-            <h2>Light Detection</h2>
-            <p id="light-reading">Light intensity: <span id="light-value">0</span> lux</p>
-            <button id="detect-light">Detect Light</button>
-        </section>
-    </main>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#components">Components</a></li>
+            <li><a href="#advantages">Advantages</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="intro" class="section">
+        <h1>Light Tracking Robot</h1>
+        <p>A Light Tracking Robot intelligently detects and follows a light source, making it ideal for automated systems and educational projects.</p>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section">
+        <h2>How It Works</h2>
+        <p>The Light Tracking Robot uses light-dependent resistors (LDRs) to detect light intensity. Based on the input from the LDRs, it moves toward the light source by adjusting the motor speeds.</p>
+        <button onclick="toggleDetails()">Read More</button>
+        <div id="more-info" class="hidden">
+            <p>The robot uses differential steering to navigate toward the light. It compares the light intensity on both sides, allowing it to turn in the direction of the stronger light source.</p>
+        </div>
+    </section>
+
+    <!-- Components Section -->
+    <section id="components" class="section">
+        <h2>Components Used</h2>
+        <ul>
+            <li>Light-Dependent Resistors (LDRs)</li>
+            <li>DC Motors</li>
+            <li>Motor Driver IC</li>
+            <li>Arduino or Microcontroller</li>
+            <li>Power Supply</li>
+            <li>Chassis and Wheels</li>
+        </ul>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="section">
+        <h2>Advantages</h2>
+        <ul>
+            <li>Autonomous Light Detection</li>
+            <li>Real-time Response to Environmental Changes</li>
+            <li>Ideal for Educational Purposes</li>
+            <li>Easy to Build and Program</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Light Tracking Robot Project | All Rights Reserved</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
