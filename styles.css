@@ -44,14 +44,11 @@ nav ul li a:hover {
     color: #FFFFFF;
 }
 
-.section {
-    padding: 100px 50px;
+.section-title {
     text-align: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #00d2ff;
 }
 
 #intro {
