@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Light Tracking Robot</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#intro">Home</a></li>
             <li><a href="#how-it-works">How It Works</a></li>
             <li><a href="#components">Components</a></li>
             <li><a href="#advantages">Advantages</a></li>
@@ -21,41 +22,53 @@
 
     <!-- Hero Section -->
     <section id="intro" class="section">
-        <h1>Light Tracking Robot</h1>
-        <p>A Light Tracking Robot intelligently detects and follows a light source, making it ideal for automated systems and educational projects.</p>
+        <div class="hero-content">
+            <h1>Light Tracking Robot</h1>
+            <p>Welcome to the future of automation. A robot that follows the light!</p>
+        </div>
     </section>
 
     <!-- How It Works Section -->
     <section id="how-it-works" class="section">
         <h2>How It Works</h2>
-        <p>The Light Tracking Robot uses light-dependent resistors (LDRs) to detect light intensity. Based on the input from the LDRs, it moves toward the light source by adjusting the motor speeds.</p>
-        <button onclick="toggleDetails()">Read More</button>
+        <p>The Light Tracking Robot uses advanced light sensors to detect and track light sources, adjusting its movement accordingly. It moves toward brighter areas by adjusting its motors based on light intensity.</p>
+        <button onclick="toggleDetails()">Learn More</button>
         <div id="more-info" class="hidden">
-            <p>The robot uses differential steering to navigate toward the light. It compares the light intensity on both sides, allowing it to turn in the direction of the stronger light source.</p>
+            <p>The robot leverages two light-dependent resistors (LDRs) that act as the "eyes." These LDRs measure the light intensity and send signals to a microcontroller, which adjusts the motors' speed to steer the robot toward the brightest light source.</p>
         </div>
     </section>
 
     <!-- Components Section -->
     <section id="components" class="section">
         <h2>Components Used</h2>
-        <ul>
-            <li>Light-Dependent Resistors (LDRs)</li>
-            <li>DC Motors</li>
-            <li>Motor Driver IC</li>
-            <li>Arduino or Microcontroller</li>
-            <li>Power Supply</li>
-            <li>Chassis and Wheels</li>
-        </ul>
+        <div class="component-list">
+            <div class="component-card">
+                <h3>Light Sensors (LDRs)</h3>
+                <p>These sensors detect light intensity to guide the robot's movement.</p>
+            </div>
+            <div class="component-card">
+                <h3>DC Motors</h3>
+                <p>The motors control the wheels, adjusting speed and direction based on sensor input.</p>
+            </div>
+            <div class="component-card">
+                <h3>Microcontroller</h3>
+                <p>It processes data from sensors and sends signals to the motors.</p>
+            </div>
+            <div class="component-card">
+                <h3>Power Supply</h3>
+                <p>Powers the entire system, ensuring the robot runs smoothly.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Advantages Section -->
     <section id="advantages" class="section">
         <h2>Advantages</h2>
-        <ul>
-            <li>Autonomous Light Detection</li>
-            <li>Real-time Response to Environmental Changes</li>
-            <li>Ideal for Educational Purposes</li>
-            <li>Easy to Build and Program</li>
+        <ul class="advantages-list">
+            <li>Autonomous light detection and movement.</li>
+            <li>Great educational tool for learning robotics and automation.</li>
+            <li>Cost-effective and easy to build.</li>
+            <li>Expandable for more complex projects like solar tracking systems.</li>
         </ul>
     </section>
 
