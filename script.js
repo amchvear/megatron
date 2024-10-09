@@ -1,10 +1,6 @@
-document.getElementById('learnMoreBtn').addEventListener('click', function() {
-    const extraInfo = document.getElementById('extraInfo');
-    if (extraInfo.classList.contains('hidden')) {
-        extraInfo.classList.remove('hidden');
-        this.textContent = 'Show Less';
-    } else {
-        extraInfo.classList.add('hidden');
-        this.textContent = 'Learn More';
-    }
+const lightSensor = new LightSensor(); // assume LightSensor is a class that detects light intensity
+
+document.getElementById('detect-light').addEventListener('click', () => {
+    const lightValue = lightSensor.getLightIntensity();
+    document.getElementById('light-value').innerHTML = lightValue + ' lux';
 });
