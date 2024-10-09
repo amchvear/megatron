@@ -10,12 +10,13 @@ body {
     color: #e2e2e2;
     line-height: 1.6;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 header {
     background: rgba(20, 20, 50, 0.9);
     color: #e2e2e2;
-    padding: 1.5em 0;
+    padding: 2em 0;
     text-align: center;
     position: sticky;
     top: 0;
@@ -31,7 +32,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav a {
@@ -39,6 +40,7 @@ nav a {
     text-decoration: none;
     font-weight: 700;
     transition: color 0.3s;
+    font-size: 1.2em; /* Increased font size */
 }
 
 nav a:hover {
@@ -46,38 +48,44 @@ nav a:hover {
 }
 
 main {
-    padding: 20px;
+    padding: 30px;
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 section:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 16px 60px rgba(0, 0, 0, 0.7);
 }
 
 h2 {
     color: #00adb5;
     margin-bottom: 15px;
+    font-size: 2em; /* Increased heading size */
+}
+
+p, ul, ol {
+    font-size: 1.1em; /* Increased paragraph and list size */
+    margin-bottom: 15px;
 }
 
 button {
-    padding: 10px 15px;
+    padding: 15px 25px;
     background: #00adb5;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
-    font-size: 16px;
+    margin-top: 30px;
+    font-size: 1.2em; /* Increased button font size */
     transition: background 0.3s, transform 0.3s;
 }
 
@@ -92,17 +100,15 @@ button:hover {
 
 #extraInfo {
     margin-top: 20px;
-    padding: 15px;
+    padding: 20px;
     background: rgba(20, 20, 50, 0.9);
     border-radius: 10px;
 }
 
 footer {
     text-align: center;
-    margin-top: 30px;
-    padding: 15px 0;
+    margin-top: 40px;
+    padding: 20px 0;
     background: rgba(20, 20, 50, 0.9);
     color: #e2e2e2;
-    position: relative;
 }
-
