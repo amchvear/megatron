@@ -6,13 +6,13 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #0A0F1F;
-    color: #F5F5F5;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #f5f5f5;
     scroll-behavior: smooth;
 }
 
 header {
-    background-color: #0A0F1F;
+    background: rgba(26, 26, 46, 0.8);
     padding: 20px;
     text-align: center;
     position: fixed;
@@ -23,16 +23,16 @@ header {
 
 .group-name {
     font-family: 'Orbitron', sans-serif;
-    color: #4EF1F2;
-    font-size: 1.8rem;
+    color: #0fbcf9;
+    font-size: 2rem;
     letter-spacing: 2px;
 }
 
 nav {
-    background-color: #131B33;
+    background: rgba(26, 26, 46, 0.8);
     padding: 10px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -46,15 +46,65 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #4EF1F2;
+    color: #0fbcf9;
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
-    font-size: 18px;
+    font-size: 1.1rem;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #FFFFFF;
+    color: #ffffff;
+}
+
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?robot,technology') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: #f5f5f5;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #0fbcf9;
+    animation: slide-in 1s forwards;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 30px;
+    background-color: #0fbcf9;
+    border: none;
+    color: #1a1a2e;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #00a8ff;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
 }
 
 .section {
@@ -67,48 +117,7 @@ nav ul li a:hover {
     flex-direction: column;
 }
 
-#intro {
-    background: url('https://source.unsplash.com/1600x900/?robot,technology') no-repeat center center/cover;
-    color: #F5F5F5;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-content h1 {
-    font-size: 4rem;
-    font-family: 'Orbitron', sans-serif;
-    color: #4EF1F2;
-    animation: slide-in 1s forwards; /* Entrance animation */
-}
-
-.hero-content p {
-    font-size: 1.5rem;
-    margin-top: 10px;
-}
-
-button {
-    padding: 10px 30px;
-    background-color: #4EF1F2;
-    border: none;
-    color: #0A0F1F;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #3AE0E1;
-}
-
-.hidden {
-    display: none;
-}
-
-#components .component-list {
+.component-list {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -116,7 +125,7 @@ button:hover {
 }
 
 .component-card {
-    background-color: #1C233A;
+    background: rgba(38, 43, 57, 0.8);
     padding: 20px;
     width: 250px;
     border-radius: 10px;
@@ -131,59 +140,49 @@ button:hover {
 
 .component-card h3 {
     font-size: 1.4rem;
-    color: #4EF1F2;
+    color: #0fbcf9;
     margin-bottom: 10px;
 }
 
 .spacer {
-    height: 100px; /* Extra space between components and advantages */
+    height: 50px; /* Adjusted space for better separation */
 }
 
 footer {
-    background-color: #131B33;
+    background: rgba(26, 26, 46, 0.8);
     padding: 20px;
     text-align: center;
 }
 
 footer p {
-    color: #4EF1F2;
+    color: #0fbcf9;
 }
 
 /* Team Section Styling */
-#team .team-list {
+.team-list {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-#team .team-member {
-    background-color: #1C233A;
+.team-member {
+    background-color: rgba(38, 43, 57, 0.8);
     padding: 20px;
     border-radius: 10px;
-    width: 200px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
 
-#team .team-member:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+.team-member:hover {
+    transform: translateY(-5px);
 }
 
-#team .team-member h3 {
-    font-size: 1.2rem;
-    color: #4EF1F2;
+.team-member h3 {
+    color: #0fbcf9;
 }
 
-/* Animation */
-@keyframes slide-in {
-    from {
-        transform: translateY(-50%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.team-member p {
+    color: #f5f5f5;
 }
