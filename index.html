@@ -10,6 +10,11 @@
 </head>
 <body>
 
+    <!-- Group Name at the Top -->
+    <header>
+        <h1 class="group-name">Robotics Innovators</h1>
+    </header>
+
     <!-- Navigation Bar -->
     <nav>
         <ul>
@@ -17,20 +22,21 @@
             <li><a href="#how-it-works">How It Works</a></li>
             <li><a href="#components">Components</a></li>
             <li><a href="#advantages">Advantages</a></li>
+            <li><a href="#team">Our Team</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
     <section id="intro" class="section">
         <div class="hero-content">
-            <h1>Light Tracking Robot</h1>
+            <h1 id="robot-title" class="slide-in-title">Light Tracking Robot</h1>
             <p>Welcome to the future of automation. A robot that follows the light!</p>
         </div>
     </section>
 
     <!-- How It Works Section -->
     <section id="how-it-works" class="section">
-        <h2 class="section-title">How it works?</h2>
+        <h2>How It Works</h2>
         <p>The Light Tracking Robot uses advanced light sensors to detect and track light sources, adjusting its movement accordingly. It moves toward brighter areas by adjusting its motors based on light intensity.</p>
         <button onclick="toggleDetails()">Learn More</button>
         <div id="more-info" class="hidden">
@@ -40,7 +46,7 @@
 
     <!-- Components Section -->
     <section id="components" class="section">
-        <h2 class="section-title">Components Used</h2>
+        <h2>Components Used</h2>
         <div class="component-list">
             <div class="component-card">
                 <h3>Light Sensors (LDRs)</h3>
@@ -61,15 +67,41 @@
         </div>
     </section>
 
+    <!-- Additional Space for Separation -->
+    <section class="spacer"></section>
+
     <!-- Advantages Section -->
     <section id="advantages" class="section">
-        <h2 class="section-title">Advantages</h2>
+        <h2>Advantages</h2>
         <ul class="advantages-list">
             <li>Autonomous light detection and movement.</li>
             <li>Great educational tool for learning robotics and automation.</li>
             <li>Cost-effective and easy to build.</li>
             <li>Expandable for more complex projects like solar tracking systems.</li>
         </ul>
+    </section>
+
+    <!-- Team Members Section -->
+    <section id="team" class="section">
+        <h2>Our Team</h2>
+        <div class="team-list">
+            <div class="team-member">
+                <h3>Member 1</h3>
+                <p>Lead Programmer</p>
+            </div>
+            <div class="team-member">
+                <h3>Member 2</h3>
+                <p>Hardware Specialist</p>
+            </div>
+            <div class="team-member">
+                <h3>Member 3</h3>
+                <p>Design Engineer</p>
+            </div>
+            <div class="team-member">
+                <h3>Member 4</h3>
+                <p>Project Manager</p>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
