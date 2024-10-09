@@ -4,11 +4,10 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #0A0F1F; /* Dark futuristic background */
-    color: #F5F5F5;
-    scroll-behavior: smooth;
+font-family: 'Poppins', sans-serif;
+    background-color: #1d1f21;
+    color: #eee;
+    line-height: 1.6;
 }
 
 nav {
@@ -98,14 +97,11 @@ button:hover {
     flex-wrap: wrap;
 }
 
-.component-card {
-    background-color: #1C233A;
-    padding: 20px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+.display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 
 .component-card:hover {
     transform: translateY(-10px);
