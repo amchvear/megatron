@@ -2,10 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: all 0.3s ease;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #e0eafc, #cfdef3);
     color: #333;
     line-height: 1.6;
@@ -16,6 +17,7 @@ header {
     padding: 20px;
     background-color: #4a90e2;
     color: white;
+    position: relative;
 }
 
 h1 {
@@ -25,6 +27,23 @@ h1 {
 
 h2 {
     margin: 20px 0;
+}
+
+nav {
+    margin: 15px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .features, .about, .gallery {
@@ -60,10 +79,12 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1.1em;
 }
 
 button:hover {
     background-color: #357ABD;
+    transform: scale(1.05);
 }
 
 footer {
@@ -71,4 +92,8 @@ footer {
     padding: 10px;
     background-color: #4a90e2;
     color: white;
+}
+
+html {
+    scroll-behavior: smooth;
 }
