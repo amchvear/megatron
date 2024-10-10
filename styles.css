@@ -1,188 +1,74 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
-    color: #f5f5f5;
-    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background: rgba(26, 26, 46, 0.8);
+    text-align: center;
     padding: 20px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    background-color: #4a90e2;
+    color: white;
 }
 
-.group-name {
-    font-family: 'Orbitron', sans-serif;
-    color: #0fbcf9;
-    font-size: 2rem;
-    letter-spacing: 2px;
-}
-
-nav {
-    background: rgba(26, 26, 46, 0.8);
-    padding: 10px;
-    text-align: center;
-    margin-top: 60px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: #0fbcf9;
-    text-decoration: none;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.1rem;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ffffff;
-}
-
-.hero {
-    background: url('https://source.unsplash.com/1600x900/?robot,technology') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    color: #f5f5f5;
-}
-
-.hero-content {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 30px;
-    border-radius: 15px;
-}
-
-.hero-content h1 {
-    font-size: 4rem;
-    font-family: 'Orbitron', sans-serif;
-    color: #0fbcf9;
-    animation: slide-in 1s forwards;
-}
-
-.hero-content p {
-    font-size: 1.5rem;
-    margin-top: 10px;
-}
-
-button {
-    padding: 10px 30px;
-    background-color: #0fbcf9;
-    border: none;
-    color: #1a1a2e;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #00a8ff;
-    transform: scale(1.05);
-}
-
-.hidden {
-    display: none;
-}
-
-.section {
-    padding: 100px 50px;
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.component-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.component-card {
-    background: rgba(38, 43, 57, 0.8);
-    padding: 20px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.component-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
-}
-
-.component-card h3 {
-    font-size: 1.4rem;
-    color: #0fbcf9;
+h1 {
+    font-size: 2.5em;
     margin-bottom: 10px;
 }
 
-.spacer {
-    height: 50px; /* Adjusted space for better separation */
+h2 {
+    margin: 20px 0;
+}
+
+.features, .about, .gallery {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.images img {
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357ABD;
 }
 
 footer {
-    background: rgba(26, 26, 46, 0.8);
-    padding: 20px;
     text-align: center;
-}
-
-footer p {
-    color: #0fbcf9;
-}
-
-/* Team Section Styling */
-.team-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.team-member {
-    background-color: rgba(38, 43, 57, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.team-member:hover {
-    transform: translateY(-5px);
-}
-
-.team-member h3 {
-    color: #0fbcf9;
-}
-
-.team-member p {
-    color: #f5f5f5;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: white;
 }
